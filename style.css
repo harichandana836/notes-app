@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+.container:hover {
+    transform: translateY(-3px);
+}
+.input-section button {
+    background: #22c55e;
+    color: white;
+    font-size: 15px;
+}
+.input-section button:hover {
+    background: #16a34a;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+textarea {
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 14px;
+}
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    opacity: 0.9;
+}
+.note {
+    background: #f1f5f9;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.note span {
+    white-space: pre-wrap;
+    word-break: break-word;
+    flex: 1;
+}
+.note div {
+    display: flex;
+    gap: 6px;
+}
+.note button:first-child {
+    background: #6366f1;
+    color: white;
+}
+.note button:last-child {
+    background: #ef4444;
+    color: white;
+}
+.note:hover {
+    background: #eef2ff;
+    transform: translateY(-1px);
+    transition: 0.2s;
+}
+#notesContainer {
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    margin-top: 15px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

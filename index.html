@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App | Hari Chandana</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Notes App</h1>
+        <p style="text-align:center; color:#64748b;">
+            Simple notes manager with local storage support
+        </p>
+        <hr style="border:none; border-top:1px solid #e5e7eb; margin:15px 0;">
+        <div class="input-section">
+            <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </div>
+    <button onclick="clearAllNotes()" style="margin-top:10px; background:#f97316;">
+        Clear All Notes
+    </button>
+        <div id="notesContainer"></div>
+        <footer style="text-align:center; margin-top:15px; color:#94a3b8;">
+            Built by Hari Chandana
+        </footer>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
